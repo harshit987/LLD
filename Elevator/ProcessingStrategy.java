@@ -3,4 +3,6 @@ public interface ProcessingStrategy {
     public int fetchNextFloor();
 
     public void removeNextFloor();
+
+//    public int getSeekTime()
 }

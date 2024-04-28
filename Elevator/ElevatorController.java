@@ -27,4 +27,9 @@ public class ElevatorController {
             }
         }
     }
+
+    public int getSeekTime(int floorNo, Direction direction) {
+        // TODO: Use direction for getting minimum seek time
+        return Math.abs(floorNo - this.elevator.getCurrentFloor());
+    }
 }
