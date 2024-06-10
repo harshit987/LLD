@@ -14,7 +14,9 @@ public class OperationSelectionState extends ATMState {
                 atm.changeState(new DepositState());
                 break;
             case CHECK_BALANCE:
-                atm.changeState(new CheckBalanceState(atm));
+                double balance = atm.getCardDetail().getAccount().getBalance();
+                System.out.println("Current balance for the account is " + balance);
+                atm.changeState(new IdleState());
                 break;
             default:
                 throw new RuntimeException("Unknown operation selected");

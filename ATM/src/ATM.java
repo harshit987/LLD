@@ -20,12 +20,15 @@ public class ATM {
     }
 
     public void insertCard(CardDetail cardDetail) {
+        System.out.println(atmState.getClass().toString());
         atmState.insertCard(this, cardDetail);
     }
     public void selectOperation(OperationType operationType) {
+        System.out.println(operationType.name());
         atmState.selectOperation(this, operationType);
     }
     public void withdrawAmount(double amount) {
+        System.out.println(amount);
         atmState.withdrawAmount(this, amount);
     }
 
@@ -34,6 +37,7 @@ public class ATM {
     }
 
     public void checkPin(Integer pin) {
+        System.out.println("*******");
         atmState.checkPin(this, currCardDetail, pin);
     }
     public void changeState(ATMState atmState) {
