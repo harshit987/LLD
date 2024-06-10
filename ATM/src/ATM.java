@@ -33,12 +33,8 @@ public class ATM {
         atmState.depositAmount(this, amount);
     }
 
-    public void checkBalance() {
-        atmState.checkBalance(this);
-    }
-
-    public void checkPin(Integer pin, CardDetail cardDetail) {
-        atmState.checkPin(this, cardDetail, pin);
+    public void checkPin(Integer pin) {
+        atmState.checkPin(this, currCardDetail, pin);
     }
     public void changeState(ATMState atmState) {
         this.atmState = atmState;

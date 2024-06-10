@@ -1,4 +1,9 @@
 public class OperationSelectionState extends ATMState {
+
+    public OperationSelectionState() {
+        System.out.println("Select one of the operations: ");
+    }
+
     @Override
     public void selectOperation(ATM atm, OperationType operationType) {
         switch(operationType) {

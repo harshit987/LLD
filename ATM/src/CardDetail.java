@@ -10,7 +10,7 @@ public class CardDetail {
     }
 
     public boolean isCorrectPin(Integer pin) {
-        if(pin == this.pin)
+        if(pin.equals(this.pin))
             return true;
         else return false;
     }

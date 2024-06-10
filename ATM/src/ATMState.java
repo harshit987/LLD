@@ -31,8 +31,4 @@ public abstract class ATMState {
     public void checkPin(ATM atm, CardDetail cardDetail, Integer pin) {
         throw new IllegalStateException("can't enter pin");
     }
-
-    public void checkBalance(ATM atm) {
-        throw new IllegalStateException("can't check balance");
-    }
 }
