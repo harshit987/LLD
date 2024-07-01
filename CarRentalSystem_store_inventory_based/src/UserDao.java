@@ -1,7 +1,7 @@
 import java.util.Map;
 
 public class UserDao {
-    Map<String, User> idToUserMap;
+    Map<Long, User> idToUserMap;
 
     // CRUD operations on Users data
     public void addUser(User user) {
